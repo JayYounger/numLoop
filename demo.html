@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <style type="text/css">
+        body{
+            font-family: Microsoft YaHei;
+        }
+        .wapSpan{
+            display: inline-block;
+            line-height: 34px;
+            height: 34px;
+            margin: 0px 4px;
+            font-size: 28px;
+            color: #fff000;
+            position: relative;
+            top: 1px;
+            *top: -1px;
+        }
+        .wapSpan2{
+            display: inline-block;
+            line-height: 24px;
+            height: 24px;
+            margin: 0px 4px;
+            font-size: 20px;
+            color: #f00;
+            position: relative;
+            top: 1px;
+            *top: -1px;
+        }
+        .numLoopWrap{
+            height: 100%;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: text-bottom;
+        }
+        .numLoop{
+            vertical-align: text-bottom;
+            display: inline-block;
+            padding: 0 0 4px 0;
+            margin: 0;
+            font-size: inherit;
+            color: inherit;
+        }
+        .numLoop > li{
+            display: block;
+            margin: 0;
+            padding: 0;
+            vertical-align: bottom;
+            text-align: center;
+            font-size: inherit;
+            color: inherit;
+            *margin-bottom:2px;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/numLoop.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".wapSpan").numLoop().startNumLoop();
+            $(".wapSpan2").numLoop({comma:true}).startNumLoop();
+        });
+    </script>
+</head>
+<body>
+已参加本活动<span class="wapSpan">764237</span>人<br>
+已参加本活动<span class="wapSpan2">2396385</span>人
+<!--<a style="font-size: 80px">&#10148 </a>-->
+</body>
+</html>
