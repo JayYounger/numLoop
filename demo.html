@@ -21,38 +21,37 @@
         }
         .wapSpan2{
             display: inline-block;
-            line-height: 24px;
-            height: 24px;
-            margin: 0px 4px;
-            font-size: 20px;
+            line-height: 26px;
+            height: 26px;
+            font-size: 22px;
             color: #f00;
             position: relative;
             top: 1px;
-            *top: -1px;
+            *top: -6px;
         }
-        .numLoopWrap{
+        .numberLoopWrap{
             height: 100%;
             display: inline-block;
             overflow: hidden;
             vertical-align: text-bottom;
         }
-        .numLoop{
+        .numberLoop{
             vertical-align: text-bottom;
             display: inline-block;
-            padding: 0 0 4px 0;
+            padding: 0;
             margin: 0;
             font-size: inherit;
             color: inherit;
         }
-        .numLoop > li{
+        .numberLoop > li{
             display: block;
-            margin: 0;
+            margin: 0px;
             padding: 0;
             vertical-align: bottom;
             text-align: center;
             font-size: inherit;
             color: inherit;
-            *margin-bottom:2px;
+            margin-bottom:2px;
         }
     </style>
     <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
@@ -60,13 +59,13 @@
     <script type="text/javascript">
         $(function(){
             $(".wapSpan").numLoop().startNumLoop();
-            $(".wapSpan2").numLoop({comma:true}).startNumLoop();
+            $(".wapSpan2").numLoop().startNumLoop();
         });
     </script>
 </head>
 <body>
-已参加本活动<span class="wapSpan">764237</span>人<br>
-已参加本活动<span class="wapSpan2">2396385</span>人
+已参加本活动<span class="wapSpan">12348941231</span>人<br>
+已参加本活动<span class="wapSpan2">123489</span>人
 <!--<a style="font-size: 80px">&#10148 </a>-->
 </body>
 </html>

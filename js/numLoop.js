@@ -21,7 +21,7 @@
 		for(var i=0;i<newStr.length;i++){
 			cha = newStr.charAt(i);
 			if(cha>=0&&cha<=9){
-				html += '<span class="numLoopWrap"><ul class="numLoop" numTo="'+cha+'"><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ul></span>';
+				html += '<span class="numberLoopWrap"><ul class="numberLoop" numTo="'+cha+'"><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ul></span>';
 			}else{
 				html +=cha;
 			}
@@ -43,11 +43,11 @@
 		},
 		startNumLoop:function(){
 			this.each(function(){
-				var $loopUl = $(this).find(".numLoop");
+				var $loopUl = $(this).find(".numberLoop");
 				$loopUl.each(function(){
 					var $ts = $(this);
 					var numTo = $ts.attr("numTo")*1;
-					var eachHeight = $ts.find("li:eq(1)").outerHeight();
+					var eachHeight = $ts.height()/10;
 					var moveHeight = numTo*eachHeight*-1;
 					$ts.animate({
 						marginTop:moveHeight
