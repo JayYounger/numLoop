@@ -9,7 +9,7 @@
             font-family: Microsoft YaHei;
         }
         .wapSpan{
-            display: inline-block;
+            display: block;
             line-height: 34px;
             height: 34px;
             margin: 0px 4px;
@@ -29,6 +29,8 @@
             top: 1px;
             *top: -6px;
         }
+        
+        
         .numberLoopWrap{
             height: 100%;
             display: inline-block;
@@ -66,6 +68,7 @@
 <body>
 已参加本活动<span class="wapSpan">12348941231</span>人<br>
 已参加本活动<span class="wapSpan2">123489</span>人
+<div style="color:#f00;font-size:20px;line-height:30px;">注意:包括数字的元素(span) 必须将display设置为 inline-block 或 block;line-height和height属性必须有值</div>
 <!--<a style="font-size: 80px">&#10148 </a>-->
 </body>
 </html>
