@@ -2,7 +2,7 @@
 	String.prototype.reverse=function(){
 		return this.split("").reverse().join("");
 	};
-	$.easing.easeIn = function( p ) {
+	$.easing.easeOut = function( p ) {
 		return Math.sin( p * Math.PI / 2);
 	};
 	function strAddComma(str){
@@ -51,7 +51,7 @@
 					var moveHeight = numTo*eachHeight*-1;
 					$ts.animate({
 						marginTop:moveHeight
-					},1500,"easeIn");
+					},1500,"easeOut");
 				});
 			});
 			return this;
